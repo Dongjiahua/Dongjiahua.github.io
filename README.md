@@ -2,12 +2,13 @@
 
 Personal academic website: https://dongjiahua.github.io/
 
-A responsive, accessible static site built with HTML and CSS. No build tools or JavaScript are required. `.nojekyll` disables the previous Jekyll theme.
+A responsive, accessible static site built with HTML and CSS. No build tools are required. A small script paginates additional publications; all entries remain readable without JavaScript. `.nojekyll` disables the previous Jekyll theme.
 
 ## Editing
 
 - `index.html`: biography, selected and additional publications, experience, education, and contact information.
-- `styles.css`: responsive layout, typography, and colors.
+- `styles.css`: responsive layout, typography, photo framing, and colors.
+- `publications.js`: local pagination for additional publications (two per page).
 - `assets/`: research figures and favicon. Paper figures come from the corresponding authors' project/code repositories.
 
 Preview locally using `python -m http.server 8765 --bind 127.0.0.1` from this directory.

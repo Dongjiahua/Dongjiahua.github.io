@@ -12,6 +12,7 @@
   <link rel="canonical" href="https://dongjiahua.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script src="publications.js" defer></script>
   <title>Jiahua Dong · Computer Vision &amp; Embodied AI</title>
 </head>
 <body>
@@ -35,21 +36,9 @@
         <div class="intro-links"><a class="primary-link" href="mailto:jiahuad2@illinois.edu">Get in touch <span aria-hidden="true">↗</span></a><a href="https://github.com/Dongjiahua">GitHub <span aria-hidden="true">↗</span></a><a href="#research">Publications <span aria-hidden="true">↓</span></a></div>
       </div>
       <aside class="research-note" aria-label="Research interests">
-        <div class="world-visual" aria-hidden="true">
-          <svg viewBox="0 0 400 335" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#527769" opacity=".25"/></pattern><linearGradient id="plane" x1="80" y1="70" x2="305" y2="290" gradientUnits="userSpaceOnUse"><stop stop-color="#d0dfd1" stop-opacity=".7"/><stop offset="1" stop-color="#d0dfd1" stop-opacity=".08"/></linearGradient></defs>
-            <rect width="400" height="335" fill="url(#dots)"/>
-            <g stroke="#9bad9f" stroke-width=".8" opacity=".5"><path d="M40 233 201 140 362 233 201 326Z"/><path d="M80 256 241 163M120 279 281 186M160 302 321 209M80 210 241 303M120 187 281 280M160 164 321 257"/></g>
-            <path d="M105 219V107L203 51 301 107V219L203 275Z" fill="url(#plane)" stroke="#547660" stroke-width="1.2"/>
-            <path d="M105 107 203 164 301 107M203 164V275" stroke="#547660" stroke-width="1.2"/>
-            <path d="M105 219 203 164M203 51V164L301 219" stroke="#547660" stroke-width=".8" stroke-dasharray="4 5" opacity=".6"/>
-            <path d="M141 198V132L203 96 265 132V198L203 234Z" stroke="#547660" stroke-width=".8" opacity=".5"/>
-            <path d="M141 132 203 168 265 132M203 168V234" stroke="#547660" stroke-width=".8" opacity=".5"/>
-            <path d="M71 190C61 155 88 120 127 121S171 176 210 187 290 179 326 145" stroke="#ad7947" stroke-width="2" stroke-linecap="round"/><path d="m319 144 8-1-2 8" stroke="#ad7947" stroke-width="2" stroke-linecap="round"/>
-            <g fill="#315e4b"><circle cx="105" cy="107" r="3"/><circle cx="203" cy="51" r="3"/><circle cx="301" cy="107" r="3"/><circle cx="203" cy="275" r="3"/><circle cx="203" cy="164" r="4"/></g><circle cx="203" cy="164" r="10" stroke="#315e4b" opacity=".25"/>
-            <g font-family="monospace" font-size="10" fill="#738373"><text x="19" y="37">SPACE</text><text x="319" y="310">TIME →</text><text x="319" y="110">t + 1</text><text x="61" y="210">t</text></g>
-          </svg>
-        </div>
+        <figure class="portrait">
+          <img src="assets/jiahua-dong.png" alt="Jiahua Dong" width="186" height="292" fetchpriority="high">
+        </figure>
         <p class="eyebrow note-title">Research focus</p>
         <ul class="focus-list"><li><span class="focus-number">01</span><span>Video world models</span></li><li><span class="focus-number">02</span><span>Spatially consistent generation</span></li><li><span class="focus-number">03</span><span>Representations for physical AI</span></li></ul>
       </aside>
@@ -71,9 +60,16 @@
           <div class="paper-copy"><p class="paper-meta"><span class="venue">NeurIPS 2023</span><span>Neural rendering · 3D consistency</span></p><h3><a href="/VICA-NeRF/">ViCA-NeRF: View-Consistency-Aware 3D Editing of Neural Radiance Fields</a></h3><p class="authors"><strong>Jiahua Dong</strong>, Yu-Xiong Wang</p><p class="paper-description">Text-guided 3D editing with geometric and learned regularization to keep edits consistent across viewpoints.</p><div class="paper-links"><a href="/VICA-NeRF/">Project <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2402.00864">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/Dongjiahua/VICA-NeRF">Code <span aria-hidden="true">↗</span></a></div></div>
         </article>
       </div>
-      <details class="more-work">
-        <summary><span>More publications</span><span class="expand-mark" aria-hidden="true">+</span></summary>
-        <div class="additional-publications">
+      <section class="more-work" id="more-publications" aria-labelledby="more-publications-title">
+        <div class="more-work-heading">
+          <h3 id="more-publications-title">More publications</h3>
+          <nav id="publication-pagination" class="publication-pagination" aria-label="More publications pages" hidden>
+            <button id="publications-previous" type="button" aria-label="Previous publications page" aria-controls="additional-publications">←</button>
+            <span id="publications-page" role="status" aria-live="polite" aria-atomic="true"></span>
+            <button id="publications-next" type="button" aria-label="Next publications page" aria-controls="additional-publications">→</button>
+          </nav>
+        </div>
+        <div class="additional-publications" id="additional-publications">
           <article class="compact-paper"><p class="paper-meta"><span class="venue">TMLR 2025</span></p><h3><a href="https://arxiv.org/abs/2510.06694">SCas4D: Structural Cascaded Optimization for Boosting Persistent 4D Novel View Synthesis</a></h3><p class="authors">Jipeng Lyu, <strong>Jiahua Dong</strong>, Yu-Xiong Wang</p><div class="paper-links"><a href="https://openreview.net/forum?id=YkycjbKjYP">Paper ↗</a></div></article>
           <article class="compact-paper"><p class="paper-meta"><span class="venue">arXiv 2024</span></p><h3><a href="https://arxiv.org/abs/2412.05274">SimC3D: A Simple Contrastive 3D Pretraining Framework Using RGB Images</a></h3><p class="authors"><strong>Jiahua Dong</strong>, Tong Wu, Rui Qian, Jiaqi Wang</p><div class="paper-links"><a href="https://arxiv.org/abs/2412.05274">Paper ↗</a></div></article>
           <article class="compact-paper"><p class="paper-meta"><span class="venue">Geosciences 2024</span></p><h3><a href="https://doi.org/10.3390/geosciences14110305">Accurate Feature Extraction from Historical Geologic Maps Using Open-Set Segmentation and Detection</a></h3><p class="authors">Aaron Saxton, <strong>Jiahua Dong</strong>, Albert Bode, Nattapon Jaroenchai, Rob Kooper, Xiyue Zhu, Dou Hoon Kwark, William Kramer, Volodymyr Kindratenko, Shirui Luo</p><div class="paper-links"><a href="https://doi.org/10.3390/geosciences14110305">Paper ↗</a></div></article>
@@ -81,7 +77,7 @@
           <article class="compact-paper"><p class="paper-meta"><span class="venue">CVPR 2022</span></p><h3><a href="https://arxiv.org/abs/2112.05141">Exploring the Equivalence of Siamese Self-Supervised Learning via a Unified Gradient Framework</a></h3><p class="authors">Chenxin Tao*, Honghui Wang*, Xizhou Zhu*, <strong>Jiahua Dong*</strong>, Shiji Song, Gao Huang, Jifeng Dai</p><div class="paper-links"><a href="https://arxiv.org/abs/2112.05141">Paper ↗</a><a href="https://github.com/fundamentalvision/UniGrad">Code ↗</a></div></article>
         </div>
         <p class="contribution-note">* Equal contribution.</p>
-      </details>
+      </section>
     </section>
 
     <section class="background-section" id="background" aria-labelledby="background-title">
@@ -100,8 +96,6 @@
           <div class="education-item"><p class="timeline-date">2024 – Present</p><h4>University of Illinois Urbana-Champaign</h4><p>Ph.D. in Computer Science</p><p class="muted">Advisor: <a href="https://yxw.cs.illinois.edu/">Yu-Xiong Wang</a></p></div>
           <div class="education-item"><p class="timeline-date">2022 – 2024</p><h4>University of Illinois Urbana-Champaign</h4><p>M.S. in Computer Science</p></div>
           <div class="education-item"><p class="timeline-date">2018 – 2022</p><h4>Zhejiang University</h4><p>B.S. in Computer Science and Technology</p><p class="muted">Ranked 1st of 186 students</p></div>
-          <div class="honors"><h3 class="column-heading">Selected honors</h3><p><span class="honor-year">2025</span><span>First place, Ashby Prize in Computational Science Hackathon, UIUC</span></p><p><span class="honor-year">2021</span><span>Zhijun He Scholarship, Zhejiang University</span></p><p><span class="honor-year">2020</span><span>National Scholarship, China</span></p></div>
-          <div class="teaching"><h3 class="column-heading">Teaching at UIUC</h3><p>CS 173 · Discrete Structures <span>Spring 2023</span></p><p>CS 105 · Intro Computing: Non-Tech <span>Fall 2022</span></p></div>
         </div>
       </div>
     </section>
